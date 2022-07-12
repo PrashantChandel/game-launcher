@@ -1,22 +1,31 @@
-import logo from './logo.svg';
+import Car from './car.png';
 import './App.css';
+import Card from './Card';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <div className='App_title'>Game Launcher</div>
+      <div className='container'> 
+      <Card 
+          name ="Car Game"
+          img_src = {Car}
+        />
+        <Card 
+          name ="Snake Game"
+          img_src = {Car}
+        />
+        <Card 
+          name ="Flappy Bird Game"
+          img_src = {Car}
+        />
+        <Card 
+          name ="PingPongg"
+          img_src = {Car}
+        />
+      </div>
+        
       </header>
     </div>
   );
